@@ -7,7 +7,7 @@ SET cancel_date_time = NULL
 WHERE cancel_date_time = '0000-00-00 00:00:00'
 ---------------------------------------------------------------------------------------------------------------------
 #Step 2: Extraction of date and time from both signups and cancellations.
-#Step 3: This query is after used for creation of a new table.
+#Step 3: This query is used for the creation of a new table.
 
 SELECT 
 EXTRACT(TIME FROM signup_date_time) as signup_time, 
@@ -19,7 +19,7 @@ FROM `buoyant-genre-370301.HelloFresh_Customer.customer_product_data`
 ORDER BY cancel_date ASC
 
 ---------------------------------------------------------------------------------------------------------------------
-# Step 4: Exploration of cancellation times.
+#Step 4: Exploration of cancellation times.
 
 SELECT customer_id, cancel_date, cancel_time,
 (SELECT COUNT(customer_id) FROM `buoyant-genre-370301.HelloFresh_Customer.customer_subscriptions` WHERE cancel_time BETWEEN '00:00:00' AND '06:00:00') as midnight_to_six,
@@ -31,7 +31,7 @@ WHERE cancel_date IS NOT NULL
 GROUP BY customer_id, cancel_date, cancel_time
 
 ---------------------------------------------------------------------------------------------------------------------
-# Step 5: Calculating total net sales.
+#Step 5: Calculating total net sales.
 
 SELECT
 SUM(CASE 
@@ -58,7 +58,7 @@ SELECT COUNT(cancel_date) as cancelations
 FROM `buoyant-genre-370301.HelloFresh_Customer.customer_subscriptions` 
 WHERE cancel_date IS NOT NULL AND cancel_date BETWEEN '2021-01-01' AND '2021-12-31'
 ---------------------------------------------------------------------------------------------------------------------
-#Step 7: Indentifing if there is a correlation between support calls and cancellations within a week afterwords.
+#Step 7: Identifying if there is a correlation between support calls and cancellations within a week afterwards.
 
 SELECT case_date, cancel_date, case_time, cancel_time,reason FROM `buoyant-genre-370301.HelloFresh_Customer.customer_support` as support
 JOIN
