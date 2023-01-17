@@ -54,3 +54,4 @@ The recommendations I have for HelloFresh are the following:
 3) Encourage the sales team to push annual sales and possibly promote the option of allowing monthly subscriptions to convert to annual or discounted prices.
 
 Thank you for reading! Please see Subscription.sql for SQL code and queries.
+Please see link for porjects dashboard: https://public.tableau.com/app/profile/alexander.allan/viz/HelloFreshSubscriptionsandCustomerSupport/Subscriptiondashbaord
