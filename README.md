@@ -8,6 +8,7 @@ What is the forecasted increase in customers and how does that affect customer s
 About the Dataset:
 
 The data set is sourced from [kaggle.com](https://www.kaggle.com/datasets/5181bcd48fba8c7499605c6bfe96a330eed508ecbdad865889871de8aa307c94)
+
 Kaggle has an open public data policy and is mostly used for sharing datasets within the community. The data set is up-to-date, relevant and contains no user private information. Data is gathered by a third party and has been inspected to ensure no biases have been met.
 
 ### Data Cleaning:
@@ -52,5 +53,5 @@ The recommendations I have for HelloFresh are the following:
 
 3) Encourage the sales team to push annual sales and possibly promote the option of allowing monthly subscriptions to convert to annual or discounted prices.
 
-Thank you for reading! Please see Subscription.sql for SQL code and queries.
+Thank you for reading! Please see here for [SQL code and queries](https://github.com/adallan/Subscription-Analysis/blob/main/Subscription.sql)
 Please see link for [projects dashboard](https://public.tableau.com/app/profile/alexander.allan/viz/HelloFreshSubscriptionsandCustomerSupport/Subscriptiondashbaord)
